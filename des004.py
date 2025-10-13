@@ -1,0 +1,10 @@
+v = input('Digite qualquer coisa: ')
+print('O tipo primitivo desse valor é', type(v))
+print('Só tem espaços?', v.isspace())
+print('Só tem numeros?', v.isnumeric())
+print('Só tem letras?', v.isalpha())
+print('Tem numeros?', v.isalnum())
+print('Está em maiúsculas?', v.isupper())
+print('Está em minúsculas?', v.islower())
+print('Está capitalizada?', v.istitle())
+# Desafio 004 - Análise de tipos primitivos
