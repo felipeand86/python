@@ -3,7 +3,6 @@ azul = '\33[34m'
 vermelho = '\33[31m'
 reset = '\33[m'
 
-
 peso = float(input('Qual o seu peso? '))
 altura = float(input('Qual a sua altura? '))
 imc = peso / (altura * altura)
