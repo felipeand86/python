@@ -1,4 +1,8 @@
-idade = int(input('Qual a sua idade? '))
+from datetime import date
+atual = date.today().year
+nasc = int(input('Ano de nascimento: '))
+idade = atual - nasc
+print(f'O atleta tem {idade} anos.')
 if idade <= 9:
     print('Sua categoria é Mirim!')
 elif idade <= 14:
