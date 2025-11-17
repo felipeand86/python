@@ -1,6 +1,6 @@
-for c in range(0, 50 + 1):
-    if c %2 == 0:
-        print(c)
+for c in range(2, 51, 2):
+    #if c %2 == 0: #caso simples não necessita if
+    print(c)
 print('Fim')        
 
     
