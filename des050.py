@@ -1,8 +1,9 @@
-s = 0
+soma = 0
+cont = 0
 for c in range(0, 6):
     num = int(input('Digite um valor: '))
-    s += num
-    if num %2 == 1:
-        print(s)
-print(f'A soma entre os valores é: {s}')    
-print('Fim')        
+    if num %2 == 0:
+        soma += num
+        cont += 1
+print(f'Foi informado {cont} números pares e o total é {soma}')    
+
