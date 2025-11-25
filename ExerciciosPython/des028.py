@@ -8,7 +8,7 @@ print('*-=-*' * 10)
 #o jogador tenta adivinhar
 jog = int(input('Escolha um numero entre 0 e 5: '))
 print('Processando...')
-sleep(3)
+sleep(2)
 if jog == comp:
     print('Parabéns, você me venceu!')
 else:
