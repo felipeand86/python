@@ -1,4 +1,4 @@
-soma = quant = maior = menor = media = 0
+soma = quant = menor = maior = media = 0
 continua = 's'
 while continua in 'Ss':
     num = int(input('Digite um numero: '))
@@ -13,5 +13,5 @@ while continua in 'Ss':
             menor = num
     continua = str(input('Quer continuar? [S/N]')).strip().upper()[0]
 media = soma / quant
-print(f'Foi digitado {quant} numeros e a media entre eles é de {media}')
-print(f'O maior valor digitado foi {maior} e o menor foi {menor}')
+print(f'Foram digitados {quant} números, e a média entre eles é de {media}')
+print(f'O maior valor digitado foi {maior} e o menor {menor}')
