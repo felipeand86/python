@@ -14,7 +14,7 @@ for c, v in enumerate(valores):
 print('Fim da lista')'''
 
 a = [2, 4, 6, 8]
-b = a[:]
+b = a[:] #o [:] faz com que b crie uma cópia de a
 b[2] = 9
 print(a)
 print(b)
