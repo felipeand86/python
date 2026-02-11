@@ -1,12 +1,18 @@
 aluno = {}
-aluno['nome'] = str(input('Nome: '))
-aluno['media'] = float(input(f'Media de {aluno["nome"]}: '))
-if aluno['media'] >= 7:
-    aluno['situacao'] = 'Aprovado!'
-elif aluno['media'] < 5:
-    aluno['situacao'] = 'Reprovado!'
-else:
-    aluno['situacao'] = 'Recuperação!'
-print('-='*20)
-for k, v in aluno.items():
-    print(f'  - {k} é {v}')
+while True:
+    aluno['nome'] = str(input('Nome: '))
+    aluno['media'] = float(input(f'Media de {aluno["nome"]}: '))
+    if aluno['media'] >= 7:
+        aluno['situacao'] = 'Aprovado!'
+    elif aluno['media'] < 5:
+        aluno['situacao'] = 'Reprovado!'
+    else:
+        aluno['situacao'] = 'Recuperação!'
+    print('-='*20)
+    for k, v in aluno.items():
+        print(f'  - {k} é {v}')
+
+    resp = str(input('Quer continuar? [S/N]'))
+    if resp in 'Nn':
+        break
+
