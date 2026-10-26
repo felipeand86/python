@@ -18,12 +18,12 @@ while True:
         print('ERRO! Responda apenas S ou N. ')
     if resp == 'N':
         break
-print('=-'*30)
+print('=-'*30)# inicio cabeçalho
 print('cod', end='')
 for i in jogador.keys():
     print(f' {i:<15}', end='')
 print()
-print('--'*30)
+print('--'*30)# fim cabeçalho
 for k, v in enumerate(time):
     print(f' {k+1} ', end='')
     for d in v.values():
@@ -34,7 +34,7 @@ while True:
     busca = int(input('Quer ver os dados de qual jogador? (999 para sair)'))
     if busca == 999:
         break
-    if busca > len(time):
+    if busca >= len(time):
         print('ERRO! Jogador inexistente.')
     else:
         print(f' --- Levantamento do jogador {time[busca]["nome"]}: ')
